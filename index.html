@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculator</title>
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- font awesome -->
+		<script
+			src="https://kit.fontawesome.com/18c6cf5a94.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- styles -->
+		<link rel="stylesheet" href="css/utilities.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<!-- start of the header -->
+		<header class="container">
+			<nav class="flex justify-between">
+				<!-- left part -->
+				<div class="left-side flex justify-between">
+					<p>Calculator</p>
+					<p>Project-1</p>
+				</div>
+				<!-- right part -->
+				<div class="right-side flex">
+					<div class="author-details flex">
+						<img
+							src="images/author.jpg"
+							alt="picture of the author"
+						/>
+						<div class="author-info">
+							<p class="mb-0">Developed by Joy C Mollik</p>
+							<p class="mt-0">&commat; xoycmollik</p>
+						</div>
+					</div>
+					<p>Year: 2021</p>
+				</div>
+			</nav>
+		</header>
+		<!-- end of the header -->
+		<!-- start of the main -->
+		<main>
+			<section class="container">
+				<div id="calculator" class="calculator-grid mx-auto">
+					<!-- calc header -->
+					<div class="calc-header col-span-4 flex justify-between">
+						<div class="calc-header-left">
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+						</div>
+						<div class="calc-header-right">
+							<button id="toggle-btn" class="toggle-btn">
+								<div class="toggle-circle"></div>
+							</button>
+						</div>
+					</div>
+					<!-- calc show -->
+					<div class="calc-data col-span-4 row-span-2 text-right">
+						<p class="px-4">
+							<span id="calc-prev-operand"></span>
+							<span id="operator"></span>
+						</p>
+						<h1 id="calc-current-operand" class="lg-head px-1"></h1>
+					</div>
+					<!-- buttons -->
+					<button class="calc-btn btn-clear">C</button>
+					<button class="calc-btn btn-operator">&percnt;</button>
+					<button class="calc-btn">
+						<i class="fas fa-backspace btn-prev-clear"></i>
+					</button>
+					<button class="calc-btn btn-operator brand-color divi">
+						÷
+					</button>
+					<button class="calc-btn btn-number">7</button>
+					<button class="calc-btn btn-number">8</button>
+					<button class="calc-btn btn-number">9</button>
+					<button class="calc-btn btn-operator brand-color mult">
+						&times;
+					</button>
+					<button class="calc-btn btn-number">4</button>
+					<button class="calc-btn btn-number">5</button>
+					<button class="calc-btn btn-number">6</button>
+					<button class="calc-btn btn-operator brand-color mins">
+						-
+					</button>
+					<button class="calc-btn btn-number">1</button>
+					<button class="calc-btn btn-number">2</button>
+					<button class="calc-btn btn-number">3</button>
+					<button class="calc-btn btn-operator brand-color plus">
+						+
+					</button>
+					<button class="calc-btn btn-plusMinus">&PlusMinus;</button>
+					<button class="calc-btn btn-number">0</button>
+					<button class="calc-btn btn-dots">.</button>
+					<button class="calc-btn">
+						<span class="btn-equal">=</span>
+					</button>
+				</div>
+			</section>
+		</main>
+		<!-- end of the main -->
+		<!-- start of the footer -->
+		<footer></footer>
+		<!-- end of the footer -->
+
+		<!-- javascript -->
+		<script src="js/app.js"></script>
+	</body>
+</html>
